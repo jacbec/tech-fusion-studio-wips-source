@@ -1,0 +1,141 @@
+#mainCarousel {
+  color: #FFFFFF;
+  padding: 200px 0;
+  background-image: url(../images/slider-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#mainCarousel .item {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0 !important;
+  width: 100%;
+  display: block !important;
+  opacity: 0;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  -webkit-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+  z-index: 1;
+}
+
+#mainCarousel .item:first-child {
+  position: relative;
+  top: auto;
+}
+
+#mainCarousel .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  -webkit-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+  z-index: 2;
+}
+
+#mainCarousel .item.active h1 {
+  -webkit-animation: scaleUp 400ms;
+  -moz-animation: scaleUp 400ms;
+  -o-animation: scaleUp 400ms;
+  -ms-animation: scaleUp 400ms;
+  animation: scaleUp 400ms;
+}
+
+#mainCarousel .prev,
+#mainCarousel .next {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 24px;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  margin-top: -50px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+#mainCarousel .prev:hover,
+#mainCarousel .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#mainCarousel .prev {
+  left: 10px;
+}
+
+#mainCarousel .next {
+  right: 10px;
+}
+
+#mainCarousel h1 {
+  font-size: 62px;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+}
+
+.lead {
+  font-size: 18px;
+}
+
+.lead a {
+  color: #FFFFFF;
+}
+
+.lead a:hover {
+  color: #000;
+}
+
+
+.carousel.scale .left-arrow,
+.carousel.scale .right-arrow {
+  top: 30%;
+  position: absolute;
+}
+
+.carousel.scale .left-arrow {
+  left: -10px;
+}
+
+.carousel.scale .right-arrow {
+  right: -10px;
+}
+
+.carousel.scale .active .row > div:nth-child(1) {
+  -webkit-animation: scaleUp 200ms linear 0 both;
+  -moz-animation: scaleUp 200ms linear 0 both;
+  -ms-animation: scaleUp 200ms linear 0 both;
+  -o-animation: scaleUp 200ms linear 0 both;
+  animation: scaleUp 200ms linear 0 both;
+}
+
+.carousel.scale .active .row > div:nth-child(2) {
+  -webkit-animation: scaleUp 200ms linear 100ms both;
+  -moz-animation: scaleUp 200ms linear 100ms both;
+  -ms-animation: scaleUp 200ms linear 100ms both;
+  -o-animation: scaleUp 200ms linear 100ms both;
+  animation: scaleUp 200ms linear 100ms both;
+}
+
+.carousel.scale .active .row > div:nth-child(3) {
+  -webkit-animation: scaleUp 200ms linear 200ms both;
+  -moz-animation: scaleUp 200ms linear 200ms both;
+  -ms-animation: scaleUp 200ms linear 200ms both;
+  -o-animation: scaleUp 200ms linear 200ms both;
+  animation: scaleUp 200ms linear 200ms both;
+}
+
+.carousel.scale .active .row > div:nth-child(4) {
+  -webkit-animation: scaleUp 200ms linear 400ms both;
+  -moz-animation: scaleUp 200ms linear 400ms both;
+  -ms-animation: scaleUp 200ms linear 400ms both;
+  -o-animation: scaleUp 200ms linear 400ms both;
+  animation: scaleUp 200ms linear 400ms both;
+}

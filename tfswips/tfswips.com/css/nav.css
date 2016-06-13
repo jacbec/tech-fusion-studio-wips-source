@@ -1,0 +1,37 @@
+/*
+	Navbar Styling ------------------------------------------------------------------------------------
+*/
+body {
+  margin-top: 50px;
+}
+
+i,
+i:hover {
+  cursor: pointer;
+}
+
+.navbar a,
+.navbar-default .navbar-header .navbar-brand {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.navbar,
+.navbar-header,
+.navbar .navbar-default {
+  border: none;
+  background-color: #663399;
+}
+
+.navbar {
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.navbar a:hover,
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar a:focus,
+.navbar-default .navbar-header .navbar-brand:focus {
+  color: #663399;
+  background-color: #FFFFFF;
+}
